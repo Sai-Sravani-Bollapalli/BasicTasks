@@ -31,9 +31,9 @@ No metadata, no HTTP headers, no content negotiation
 
 To expand the protocol with extended operations, extended negotiation, richer meta-information, tied with a security protocol which became more efficient by adding additional methods and header fields. RFC 1945 officially introduced and recognized HTTP V1.0 in 1996.
 
-- Request may have multiple newline seperated headers and HTTP version
-- Response has its own seperated headers and is prefixed with response status code
-- Connection is closed after transfer complete
+-Request may have multiple newline seperated headers and HTTP version
+-Response has its own seperated headers and is prefixed with response status code
+-Connection is closed after transfer complete
 
 ```markdown
 => curl -v0 https://twitter.com
@@ -61,11 +61,11 @@ Support is not limited to hypertext(can send images), content in coding, charact
 
 To satisfy the needs of modern world HTTP V1.1 was developed over a period of roughly 4 years. RFC was published in 1997 followed by an extension in 1999, RFC 2616. 
 
-- HTTP response was boosted by many things, but speacial tribute should be paid to keep-alive connections.
-- We have Chunked responses, compressions, byte ranges and pipelining.
-- There is more pragma, there is much better caching mechanisms to improve performances.
-- There are 24 new status codes
-- We got cookies because we wanted to make our apps stateful
+-HTTP response was boosted by many things, but speacial tribute should be paid to keep-alive connections.
+-We have Chunked responses, compressions, byte ranges and pipelining.
+-There is more pragma, there is much better caching mechanisms to improve performances.
+-There are 24 new status codes
+-We got cookies because we wanted to make our apps stateful
 
 
 ```markdown
@@ -108,12 +108,12 @@ If I were to do a HTTP/2 request then, for the outside of the server not much wo
 
 ### Difference between HTTP V2.0 and its predecessor
 
-- HTTP/2 is binary instead of textual. It introduces a binary framing layer.
-- HTTP/2 allows multiplexing of requests and responses
-- Due to multiplexing, we require only one single connection per origin
-- HTTP/2 can also do server push (push resources pro-actively without the need for the client to request those)
-- HTTP/2 can do flow control but at the application level
-- HTTP/2 also uses header compression to reduce the overhead
+-HTTP/2 is binary instead of textual. It introduces a binary framing layer.
+-HTTP/2 allows multiplexing of requests and responses
+-Due to multiplexing, we require only one single connection per origin
+-HTTP/2 can also do server push (push resources pro-actively without the need for the client to request those)
+-HTTP/2 can do flow control but at the application level
+-HTTP/2 also uses header compression to reduce the overhead
 
 
 
