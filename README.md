@@ -6,13 +6,13 @@ HTTP is the foundation of data communication for the World Wide Web
 Communication between clients and servers is done by requests and responses:
 
 ```markdown
-A client (the browser) sends an HTTP request to the web
-An web server receives the request
-The server runs an application to process the request
-The server returns an HTTP response (output) to the browser
-The client (the browser) receives the response
+- A client (the browser) sends an HTTP request to the web
+- An web server receives the request
+- The server runs an application to process the request
+- The server returns an HTTP response (output) to the browser
+- The client (the browser) receives the response
 ```
-[](https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.gettechnotes.com%2FImages%2FAd_Java_Images%2FWeb_Intro%2FClient_Server.png&imgrefurl=http%3A%2F%2Fwww.gettechnotes.com%2FWeb_Intro.php&tbnid=J3Cg2ICUzIHKvM&vet=12ahUKEwiQ2v3xyvPsAhWZw4UKHUYDCHIQMygGegUIARCtAQ..i&docid=_-FMlBHhujgZrM&w=793&h=328&q=http%20client%20server%20communication&ved=2ahUKEwiQ2v3xyvPsAhWZw4UKHUYDCHIQMygGegUIARCtAQ)
+
 The first documented version of HTTP was HTTP V0.9
 
 ### HTTP V0.9 (1991)
@@ -20,13 +20,46 @@ The first documented version of HTTP was HTTP V0.9
 The first version of the protocol had only one method, namely GET, which would request a page from a server. The response from the server was always an HTML page.
 
 ```markdown
+Get /
+<!DOCTYPE html>
+<html>...</html>
+```
 
+No metadata, no HTTP headers, no content negotiation
 
+### HTTP V1.0 (1996)
 
+To expand the protocol with extended operations, extended negotiation, richer meta-information, tied with a security protocol which became more efficient by adding additional methods and header fields. RFC 1945 officially introduced and recognized HTTP V1.0 in 1996.
 
+- Request may have multiple newline seperated headers and HTTP version
+- Response has its own seperated headers and is prefixed with response staus line
+- Connection is closed after transfer complete
 
+```markdown
+=> curl -vo https://twitter.com
 
+* Connected to twitter.com port 443 (#0)
 
+> Get / HTTP/1.0
+> Host: twitter.com
+> User-Agent: curl/743.0
+> Accept: */*
+>
+< HTTP/1.0 200 OK
+< Content-type: text/html;charset=utf-8
+<pragma: no-cache
+<
+<!DOCTYPE html>
+<html>...</html>
+
+* Closing connection 0
+```
+
+Support is not limited to hypertext(can send images), content in coding, character-set support, media-type negotiations, proxy behaviours, cache authorization and a bunch of things.
+
+### HTTP V1.1 (1996)
+
+To satisfy the needs of modern world HTTP V1.1 was developed over a period of roughly 4 years. RFC was published in 1997 followed by an extension in 1999, RFC 2616. 
 
 
 
