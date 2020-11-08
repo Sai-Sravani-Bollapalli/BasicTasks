@@ -178,3 +178,6 @@ Steps for what happens when we enter a URL :
 - Server sends out an HTTP response along with the status of response.
 - Browser displays HTML content
 
+
+
+
