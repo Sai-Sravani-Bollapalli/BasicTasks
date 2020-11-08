@@ -1,4 +1,5 @@
-### HTTP
+
+## HTTP
 
 HTTP (HyperText Transfer Protocol) is the underlying protocol of the World Wide Web, developed by Tim Berners-Lee.
 HTTP is the foundation of data communication for the World Wide Web
@@ -108,7 +109,8 @@ The basis of HTTP 2.0 is SPDY, an experimental protocol developed at Google that
 If I were to do a HTTP/2 request then, for the outside of the server not much would have changed. Its the same exchange headers, status codes, keep-alive connection. To understand the changes we need to look at a slightly more low levels, analyse the packets. Once you are able to decrypt the traffic, we can see new type of packets which HTTP/2 calls them a Frame. So I can see window update and settings and headers, decompressed-header data and we can already decipher the well-known headers.
 
 
-### Difference between HTTP V2.0 and its predecessor
+
+## Difference between HTTP V2.0 and its predecessor
 
 - HTTP/2 is binary instead of textual. It introduces a binary framing layer.
 - HTTP/2 allows multiplexing of requests and responses
@@ -118,7 +120,8 @@ If I were to do a HTTP/2 request then, for the outside of the server not much wo
 - HTTP/2 also uses header compression to reduce the overhead
 
 
-### Difference between Browser JS(console) vs Nodejs
+
+## Difference between Browser JS(console) vs Nodejs
 
 Both the browser and Node.js use JavaScript as their programming language.
 
@@ -140,45 +143,28 @@ Both the browser and Node.js use JavaScript as their programming language.
 
 
 
+## What happens when you type a URL in the address bar in the browser?
+
+URL stands for Uniform Resource Locator. URL is the address of the website which you can find in the address bar of your web browser. It is a reference to a resource on the internet, be it images, hypertext pages, audio/video files, etc.
+
+Example :
+https;//github.com/
 
 
+URL is sent to DNS. DNS is short for Domain Name System. Like a phonebook, DNS maintains and maps the name of the website, i.e. URL, and particular IP address it links to. Every URL on the internet has a unique IP address which is of the computer which hosts the server of the website requested.
 
+Steps for what happens when we enter a URL :
 
+- Browser checks cache for DNS entry to find the corresponding IP address of website. It looks for following cache. If not found in one, then continues checking to the next until found.
+1. Browser Cache
+2. Operating Systems Cache
+3. Router Cache
+4. ISP Cache
+- If not found in cache, ISP’s (Internet Service Provider) DNS server initiates a DNS query to find IP address of server that hosts the domain name.
+- The requests are sent using small data packets that contain information content of request and IP address it is destined for.
+- Browser initiates a TCP (Transfer Control Protocol) connection with the server using synchronize(SYN) and acknowledge(ACK) messages.
+- Browser sends an HTTP request to the web server. GET or POST request.
+- Server on the host computer handles that request and sends back a response. It assembles a response in some format like JSON, XML and HTML.
+- Server sends out an HTTP response along with the status of response.
+- Browser displays HTML content
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Sai-Sravani-Bollapalli/Blog/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Sai-Sravani-Bollapalli/Blog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
