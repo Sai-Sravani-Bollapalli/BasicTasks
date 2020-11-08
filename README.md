@@ -1,4 +1,4 @@
-# 
+
 # HTTP
 HTTP (HyperText Transfer Protocol) is the underlying protocol of the World Wide Web, developed by Tim Berners-Lee.
 HTTP is the foundation of data communication for the World Wide Web
