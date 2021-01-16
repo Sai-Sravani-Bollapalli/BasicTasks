@@ -127,23 +127,17 @@ If I were to do a HTTP/2 request then, for the outside of the server not much wo
 
 # Difference between Browser JS(console) vs Nodejs
 
-Both the browser and Node.js use JavaScript as their programming language.
+-Java Script is a client side coding
+   Node js enables server side coding written in Java Script
+-Java Script is a language
+    Node js is not a language but it has V8 engine that runs Java script on the server side.
+    (Node js contains V8 engine bundled with some libraries to do I/O and networking)
+-Java script runs inside the browser
+    Node js runs outside the browser [i.e server]
+-Java script provides behaviour to your pages [HTML,CSS]
+    Node js is a server can perform server functions like reading files ,database objects,etc.     
+-Node js has "npm" - Node Package Manager - Used for sharing  and reusing the code.
 
-- Building apps that run in the browser is a completely different thing than building a Node.js application.
-
-- Despite the fact that it's always JavaScript, there are some key differences that make the experience radically different.
-
-- From the perspective of a frontend developer who extensively uses JavaScript, Node.js apps bring with them a huge advantage: the comfort of programming everything - the frontend and the backend - in a single language. You have a huge opportunity because we know how hard it is to fully, deeply learn a programming language, and by using the same language to perform all your work on the web - both on the client and on the server, you're in a unique position of advantage.
-
-**What changes is the ecosystem ?**
-
-- In the browser, most of the time what you are doing is interacting with the DOM, or other Web Platform APIs like Cookies. Those do not exist in Node.js, of course. You don't have the document, window and all the other objects that are provided by the browser. And in the browser, we don't have all the nice APIs that Node.js provides through its modules, like the filesystem access functionality.
-
-- Another big difference is that in Node.js you control the environment. Unless you are building an open source application that anyone can deploy anywhere, you know which version of Node.js you will run the application on. Compared to the browser environment, where you don't get the luxury to choose what browser your visitors will use, this is very convenient. This means that you can write all the modern ES6-7-8-9 JavaScript that your Node.js version supports. Since JavaScript moves so fast, but browsers can be a bit slow and users a bit slow to upgrade, sometimes on the web, you are stuck with using older JavaScript / ECMAScript releases. 
-
-- You can use Babel to transform your code to be ES5-compatible before shipping it to the browser, but in Node.js, you won't need that.
-
-- Another difference is that Node.js uses the CommonJS module system, while in the browser we are starting to see the ES Modules standard being implemented. In practice, this means that for the time being you use require() in Node.js and import in the browser.
 
 
 
@@ -162,11 +156,7 @@ URL is sent to DNS. DNS is short for Domain Name System. Like a phonebook, DNS m
 
 Steps for what happens when we enter a URL :
 
-- Browser checks cache for DNS entry to find the corresponding IP address of website. It looks for following cache. If not found in one, then continues checking to the next until found.
-1. Browser Cache
-2. Operating Systems Cache
-3. Router Cache
-4. ISP Cache
+- Browser checks cache for DNS entry to find the corresponding IP address of website.   
 - If not found in cache, ISP’s (Internet Service Provider) DNS server initiates a DNS query to find IP address of server that hosts the domain name.
 - The requests are sent using small data packets that contain information content of request and IP address it is destined for.
 - Browser initiates a TCP (Transfer Control Protocol) connection with the server using synchronize(SYN) and acknowledge(ACK) messages.
@@ -175,7 +165,12 @@ Steps for what happens when we enter a URL :
 - Server sends out an HTTP response along with the status of response.
 - Browser displays HTML content
 
+```markdown
+http://www.guvi.in
 
-
-
+> http://234.23.45.6.80/index.html
+//DNS convert host name to IP address and then port
+//Initiates the HTTP request and initiates GET method(default)
+//Server sends out an HTTP response along and browser displays HTML content
+```
 
