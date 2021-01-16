@@ -127,16 +127,16 @@ If I were to do a HTTP/2 request then, for the outside of the server not much wo
 
 # Difference between Browser JS(console) vs Nodejs
 
--Java Script is a client side coding
+- Java Script is a client side coding
    Node js enables server side coding written in Java Script
--Java Script is a language
+- Java Script is a language
     Node js is not a language but it has V8 engine that runs Java script on the server side.
     (Node js contains V8 engine bundled with some libraries to do I/O and networking)
--Java script runs inside the browser
+- Java script runs inside the browser
     Node js runs outside the browser [i.e server]
--Java script provides behaviour to your pages [HTML,CSS]
+- Java script provides behaviour to your pages [HTML,CSS]
     Node js is a server can perform server functions like reading files ,database objects,etc.     
--Node js has "npm" - Node Package Manager - Used for sharing  and reusing the code.
+- Node js has "npm" - Node Package Manager - Used for sharing  and reusing the code.
 
 
 
