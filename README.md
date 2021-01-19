@@ -13,18 +13,6 @@
 ## Day 2
 ```
 
-1. How do you copy by value a composite data type? 
-2. Why there is a difference in behavior for copying contents in primitive and non primitive type?  
-3. Use typeof in all the datatypes and check the result 
- - typeof(1) 
- - typeof(1.1) 
- - typeof("1.1") 
- - typeof(true) 
- - typeof(null) 
- - typeof(undefined) 
- - typeof([]) 
- - typeof({}) 
-4. Write about objects and its internal representation in Javascript execute and see at least 15 cli commands. like mkdir, ls etc. 
-5. What is the difference between window, screen, and document in Javascript 
-6. Try the rest countries api Extract and print the flag url of all the countries in console. use the html template. 
-
+1. Load the rest countries data using your html and script.js file and run a for loop on the data and print all the country name in the console. 
+2. Give a write up on Difference between copy by value and copy by reference  
+3. How to copy by value a composite datatype (array+objects).
