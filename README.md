@@ -32,3 +32,14 @@ Do the below programs in anonymous function and IIFE
 - Remove duplicates from an array 
 - Rotate an array by k times and return the rotated array
 
+```markdown
+## Day 4
+```
+Solving problems using array functions on rest countries data
+- Get all the countries from Asia continent/region using filter function.
+- Get all the countries with population of less than 2 lacs using filter function.
+- Print the following details: country name, capital, flag using forEach function.
+- Print the total population of countries using reduce function.
+- Print the country which use US Dollars as currency. 
+
+
